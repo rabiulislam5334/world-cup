@@ -122,6 +122,7 @@ footer {
   font-weight: 400;
   color: rgba(22, 22, 22, 0.8);
 }
+/* footer */
 footer {
   padding: 100px;
   background-color: black;
@@ -164,5 +165,42 @@ footer {
   }
   .banner-img {
     margin: 0 30px;
+  }
+  .sports {
+    flex-direction: column;
+  }
+  .highlight {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 0 40px;
+  }
+  .sidebar {
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  .btn-match {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgb(84, 76, 76);
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  section,
+  footer {
+    margin-top: 50px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .footer-link ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 }
