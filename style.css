@@ -145,6 +145,68 @@ footer {
   text-decoration: none;
 }
 /* responsive */
+@media screen and (max-width: 992px) {
+  .banner {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 0;
+  }
+  .banner-content {
+    margin: 0;
+    text-align: center;
+  }
+  .banner-content h4 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 60px;
+  }
+  .banner-content p {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .banner-img {
+    margin: 0 30px;
+  }
+  .sports {
+    flex-direction: column;
+  }
+  .highlight {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 40px;
+  }
+  .sidebar {
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+  }
+  .btn-match {
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid rgb(84, 76, 76);
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  section,
+  footer {
+    margin-top: 50px;
+  }
+  footer {
+    padding: 50px 0;
+  }
+  .footer-link ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+/* mobile responsive */
+
 @media screen and (max-width: 576px) {
   .banner {
     flex-direction: column;
@@ -162,6 +224,8 @@ footer {
   }
   .banner-content p {
     width: 100%;
+
+    /* text-align: center; */
   }
   .banner-img {
     margin: 0 30px;
@@ -170,8 +234,7 @@ footer {
     flex-direction: column;
   }
   .highlight {
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin: 0 40px;
   }
